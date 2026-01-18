@@ -1,0 +1,156 @@
+
+.box .image img{
+   width:80%;
+   height: 90%;
+   object-fit: cover;
+  
+}
+.products .box-container{
+    
+    margin-top: 5%;
+    display: flex;
+   
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.products .box-container .box{
+       flex: 1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+border-radius: .5rem;
+border: .44rem solid rgba(0 , 0, 0, .1);
+position: relative;
+
+}
+.products .box-container .box:hover{
+border: .44rem solid var(--pink);
+ box-shadow: 0 .5rem 1.5rem pink;
+
+}
+.products .box-container .box .discount{
+position: absolute;
+top:.1rem;
+left: .3rem;
+padding: 0.8rem 1rem ;
+font-size: 2rem;
+color:#e84393;
+
+background:#e843933b;
+z-index: 1;
+border-radius:6rem ;
+
+}
+.products .box-container .box .image{
+    position: relative;
+    text-align: center;
+
+overflow: hidden;
+padding-bottom: 10%;
+padding-top: 15%;
+
+
+}
+
+.products .box-container .box:hover .image img{
+  width:84%;
+   height: 90%;
+}
+
+.products .box-container .box .image .icons{
+
+position: absolute;
+bottom: -7rem;left: 0rem;
+right: 0rem;
+display: flex;
+
+}
+.products .box-container .box:hover .image .icons{
+bottom: 0rem;
+}
+.products .box-container .box .image .icons a{
+
+height: 5rem;
+line-height: 5rem;
+font-size: 2rem;
+width: 50%;
+background-color: var(--pink);
+color: white;
+
+}
+.products .box-container .box .image .icons .fa-cart-shopping{
+ border-left: .1rem solid #fff7;
+     border-right: .1rem solid #fff7;
+width: 100%;
+}
+.products .box-container .box .image .icons a:hover{
+    background-color: #333;
+}
+.products .box-container .box .content
+{
+    padding: 1rem;
+    text-align: center;
+}
+.products .box-container .box .content h3{
+    font-size: 2.4rem;
+    color: #333;
+}
+.products .box-container .box .content .price{
+    font-size: 2.2rem;
+    color:var(--pink);
+    font-weight: bolder;
+    padding-top: 1rem;
+}
+.products .box-container .box .content .price span{
+    font-size: 1.7rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+/*media quiery*/
+@media(max-width:509px) {
+.products .box-container .box{
+       flex: 1 1 25rem;}
+
+       .products .box-container .box .image{
+   
+
+padding-top: 20%;
+padding-bottom: 5%;
+
+
+}
+}
+@media(max-width:430px) {
+    .products .box-container .box:hover .image img{
+  width:67%;
+   height:77%;
+}
+.box .image img{
+   width:60%;
+   height: 70%;
+   object-fit: cover;
+  
+}
+       .products .box-container .box .image{
+   
+
+padding-top:3%;
+padding-bottom: 4%;
+
+
+}
+.products .box-container .box .content
+{
+    padding: 0.5rem;
+    text-align: center;
+    
+}
+.products .box-container .box .discount{
+position: absolute;
+top:.1rem;
+left: .3rem;
+padding: 0.8rem 1rem ;
+font-size: 2rem;
+
+
+}
+}

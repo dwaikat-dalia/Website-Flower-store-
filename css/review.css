@@ -1,0 +1,57 @@
+.review .box-container2{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+   margin-top: 2.3%;
+
+}
+.review .box-container2 .box{
+    flex: 1 1 30rem;
+box-shadow:0 .5rem 1.5rem rgba(0, 0, 0, 0.247) ;
+ border-radius: .5rem;
+ padding: 3rem 2rem;
+ padding-right: 10rem;  
+ position: relative;
+}
+
+.review .box-container2 .box span .fa-quote-right{
+position: absolute;
+bottom: 3rem;
+right: 3rem;
+font-size: 6rem;
+color: #eee;
+}
+
+.review .box-container2 .box .stars i{
+    color: var(--pink);
+    font-size: 2rem;
+
+}
+.review .box-container2 .box p{
+    color: #999;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+
+}
+.review .box-container2 .box .user{
+    display: flex;
+    align-items: center;
+    padding-top:2rem ;
+}
+.review .box-container2 .box .user img{
+height: 6rem;
+width: 6rem;
+border-radius: 50%;
+object-fit: cover;
+margin-right: 2rem;
+}
+.review .box-container2 .box .user h3{
+    font-size: 2rem;
+    color: #333;
+
+}
+.review .box-container2 .box .user span{
+    font-size: 1.5rem;
+    color: #999;
+    
+}

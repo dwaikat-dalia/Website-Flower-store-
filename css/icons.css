@@ -1,0 +1,93 @@
+.icons-containerr{
+    
+   scroll-behavior: smooth;
+    background-color: var(--pink);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+     background-image: url('../img/one-tulip.jpg');
+      background-size: cover;
+
+     width: 100%;
+     
+         background-attachment: fixed;
+
+
+}
+
+.icons-containerr  .icons i {
+    font-size: 6rem;
+   
+    height: 5rem;
+    margin-right: 1rem;
+
+}
+.icons-containerr .icons{
+    background-color: #fff;
+    border: 1rem solid rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
+    padding: 2%;
+}
+.icons-containerr .icons .info{
+    margin-left:2%;
+}
+
+.icons-containerr .icons h3{
+    color: #333;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+.icons-containerr .icons span{
+    color: #555;
+   
+    font-size: 1.3rem;
+}
+.icons-containerr .icons:hover i {
+   color: var(--pink);
+}
+
+
+.icons-containerr .icons:hover{
+    
+    border: .5rem solid var(--pink);}
+
+    /*media query*/
+@media(max-width:991px){
+
+    .icons-containerr .icons{
+   flex:1 1 50rem;
+    padding: 3%;
+
+}
+
+.icons-containerr .icons h3{
+   
+    font-size: 2.1rem;
+}
+.icons-containerr .icons span{
+ 
+    font-size: 1.7rem;
+}
+
+}
+
+@media(max-width:790px){
+        .icons-containerr .icons {
+           
+  padding-left:33%;
+ 
+
+}
+.icons-containerr .icons h3{
+   
+    font-size: 2.2rem;
+}
+.icons-containerr .icons span{
+ 
+    font-size: 1.9rem;
+}
+}

@@ -1,0 +1,94 @@
+section{
+    padding: 5rem 9%;
+}
+
+#home{
+  
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/tulip.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    
+}
+
+.home .content{
+    max-width: 50rem;
+
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+
+}
+.home .content span{
+    font-size: 3.5rem;
+    color: var(--pink);
+       padding: 1rem 0;
+    line-height: 1.5;
+   
+}
+.home .content p{
+    font-size: 1.7rem;
+    color:#999;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.content .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background: #333;
+    color: #fff;
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.content .btn:hover{
+    background-color: var(--pink);
+}
+/*media query*/
+@media(max-width:590px){
+    .home{
+    padding: 2rem;
+}
+
+
+
+.home .content{
+ background-color: rgba(245, 245, 245, 0.589);
+ text-align: center;
+
+ margin: 20%;
+
+ padding: 10px;
+}
+.home .content h3{
+    font-size: 4.5rem;
+    color: #333;
+
+}
+.home .content span{
+    font-size: 2.5rem;
+    color: var(--pink);
+       padding: 2rem 0;
+    line-height: 2.5;
+   
+}
+.home .content p{
+    font-size: 2.1rem;
+    color:#2c2828;
+    padding: 1rem 0;
+    line-height:1.7;
+}
+.home .content .btn{
+   
+    margin-top: 1rem;
+ 
+    padding: 1rem 4.5rem;
+  
+    font-size: 2rem;
+}
+}

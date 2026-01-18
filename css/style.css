@@ -1,0 +1,151 @@
+:root{
+--pink:#e84393;
+
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: .2s linear;
+
+}
+
+html{
+    font-size: 50.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+background-color: white;
+padding: 2rem 9%;
+display: flex;
+justify-content: space-between;
+z-index: 1000;
+box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.1);
+}
+header .logo{
+   
+    font-size: 3rem;
+    color: #333;
+    font-weight: bolder;
+}
+header .logo span{
+   color:var(--pink);
+
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: space-between;
+
+
+}
+.navbar ul li{
+   list-style-type: none;
+  
+}
+.navbar ul li a{
+  
+  
+   font-size: 2rem;
+   padding:0 1.5rem;
+   color: #666;
+}
+.navbar ul li a:hover{
+
+   color: var(--pink);
+}
+header .iconsfirst  a{
+    font-size: 2.5rem;
+    color: #333;
+   margin-left: 1.5rem;
+}
+header .iconsfirst a:hover{
+
+   color: var(--pink);
+}
+#toggler{
+    display: none;
+}
+label .fa-bars{
+    font-size: 3rem;
+    color: #333;
+    border-radius:0.5rem ;
+    padding: 0rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+label .fa-bars:hover{
+       color: var(--pink);
+
+}
+
+
+/*media query*/
+@media(max-width:991px){
+
+html{
+    font-size: 40%;
+}
+header{
+    padding:2rem;
+}
+}
+@media(max-width:590px) {
+
+  header .fa-bars {
+    display: block;
+  }
+  header .navbar  {
+
+   background: white;
+      position: absolute;
+       top: 100%;
+    left: 0;
+    right: 0;
+    border-top: .1rem solid rgba(0, 0, 0, 0.1);
+clip-path: polygon(0 0 , 100% 0 ,100% 0 , 0 0 );  
+ 
+}
+header #toggler:checked ~ .navbar{
+    clip-path: polygon(0 0 , 100% 0 ,100% 100% , 0 100% );  
+
+}
+  
+ header .navbar ul {
+  
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+      list-style: none;
+     padding: 0;
+    margin: 0;
+ 
+ }
+  header .navbar ul li{
+     margin: 1.5rem;
+    padding: 2.8rem;
+   background-color: #f5dde9;
+  }
+
+ header .navbar ul li a{
+    color: black;
+    font-size: 2.5rem;
+ }
+ 
+
+}
+
+
